@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+    font-family: "Manrope", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+.site-logo {
+    font-size: 35px;
+    font-weight: 800;
+    color: black;
+    transition: 0.4s ease-in-out !important;
+}
+.site-logo:hover {
+    color: #dc3545;
+}
+.site-logo:hover span {
+    color: black !important;
+}
+.search-ico {
+    font-size: 18px;
+    color: #424247a6;
+}
+
+.navbar-nav li a {
+    font-size: 16px;
+    color: #424247;
+}
+.navbar-nav li a:hover {
+    color: #dc3545;
+}
+.carousel-item img {
+    height: 580px;
+}
+.bnr-bg {
+    background-color: #424247a9;
+    border-radius: 15px;
+}
+.common-heading {
+    text-align: center;
+    border-top: 1px dashed #4242474f;
+    border-bottom: 1px dashed #4242474f;
+}
+.common-heading h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: black;
+}
+.common-heading p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #424247af;
+}
+.program-card h5 {
+    font-size: 28px;
+    font-weight: 800;
+}
+.program-card .card-body {
+    padding: 15rem 2rem;
+}
+.program-card p {
+    font-size: 16px;
+    color: #ffffffd3;
+}
+.card-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.card-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.jr-card {
+    background-image: url("images/2.png");
+}
+.teen-card {
+    background-image: url("images/3.png");
+}
+.pro-card {
+    background-image: url("images/4.png");
+}
+.pointer {
+    cursor: pointer;
+}
+.contact-card {
+    background-color: #eaeaea57;
+    transition: 0.4s ease-in-out !important;
+}
+.contact-card:hover {
+    background-color: #eef1ff;
+}
+.contact-card h5 {
+    font-size: 18px;
+    margin-top: -10px;
+}
+.social-media {
+    background-color: #13131809;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
+}

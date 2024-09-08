@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="circular_progess.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary my-3 align-items-center">
+            <div class="container-fluid">
+                <a class="site-logo text-decoration-none" href="#">Hockey<span class="text-danger">’</span>s</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active text-danger fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <i class="fa-solid fa-magnifying-glass search-ico my-auto me-4"></i>
+                        <button class="btn btn-danger py-2 px-3" type="submit">Get Ticket</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section class="banner">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bnr-bg">
+                            <h5>Meet all the heroes from the field</h5>
+                            <p>The rink transformed into a battlefield, with every player battling fiercely for ultimate
+                                victory.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bnr-bg">
+                            <h5>In Game passion and skill collided on the ice.</h5>
+                            <p>Game showcased an exhilarating clash where passion and skill collided in every play.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bnr-bg">
+                            <h5>Every shift was a testament to pure determination and grit</h5>
+                            <p>Each shift exemplified a relentless drive, with players displaying unwavering
+                                determination and sheer grit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bnr-bg">
+                            <h5>Victory was within reach, as the intensity soared in every period.</h5>
+                            <p>As intensity soared throughout the periods, victory seemed just within grasp for both
+                                teams.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="d-md-none bnr-bg bg-dark text-light p-3 mt-4">
+                <h5 class="fs-5 fw-bold">Meet all the heroes from the field</h5>
+                <p class="text-secondary">The rink transformed into a battlefield, with every player battling
+                    fiercely for ultimate
+                    victory.</p>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <!-- Counter-Section -->
+        <section class="my-3 my-md-5 py-4">
+            <div class="common-heading py-4">
+                <h2 class="mt-2">Professional Hockeys Club</h2>
+                <p class="mt-3">The Professional Hockey Club embodies excellence, with elite players
+                    delivering</br>top-tier
+                    performance,
+                    passion, and
+                    dedication on the ice.</p>
+            </div>
+            <div class="pt-5 row px-4 px-md-0">
+                <div class="text-center d-flex flex-column align-items-center px-2 col-md-3 mb-3 mb-md-0">
+                    <div class="progress blue border-danger">
+                        <span class="progress-left">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <div class="progress-value text-dark">87%</div>
+                    </div>
+                    <div>
+                        <h4 class="fs-5 fw-semibold mt-1 mt-md-4">Prayer Facility</h4>
+                        <p class="text-secondary">A peaceful sanctuary for prayer, reflection, and spiritual connection.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center d-flex flex-column align-items-center px-2 col-md-3 mb-3 mb-md-0">
+                    <div class="progress blue border-success">
+                        <span class="progress-left">
+                            <span class="progress-bar border-success"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-success"></span>
+                        </span>
+                        <div class="progress-value text-dark">95%</div>
+                    </div>
+                    <div>
+                        <h4 class="fs-5 fw-semibold mt-1 mt-md-4">Experienced Coach</h4>
+                        <p class="text-secondary">An experienced coach brings valuable expertise, guiding athletes with
+                            wisdom.</p>
+                    </div>
+                </div>
+                <div class="text-center d-flex flex-column align-items-center px-2 col-md-3 mb-3 mb-md-0">
+                    <div class="progress blue border-warning">
+                        <span class="progress-left">
+                            <span class="progress-bar border-warning"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-warning"></span>
+                        </span>
+                        <div class="progress-value text-dark">90%</div>
+                    </div>
+                    <div>
+                        <h4 class="fs-5 fw-semibold mt-1 mt-md-4">Senior Player</h4>
+                        <p class="text-secondary">A senior player leads with experience, offering mentorship, skill, and
+                            steady.</p>
+                    </div>
+                </div>
+                <div class="text-center d-flex flex-column align-items-center px-2 col-md-3">
+                    <div class="progress blue border-primary">
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <div class="progress-value text-dark">80%</div>
+                    </div>
+                    <div>
+                        <h4 class="fs-5 fw-semibold mt-1 mt-md-4">Training Ground</h4>
+                        <p class="text-secondary">A training ground is where athletes hone their skills, build strength.
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <!-- Program-Section -->
+        <section class="program-section">
+            <div class="common-heading py-4">
+                <h2 class="mt-2">Program Section</h2>
+                <p class="mt-3">The Professional Hockey Club embodies excellence, with elite players
+                    delivering</br>top-tier
+                    performance,
+                    passion, and
+                    dedication on the ice.</p>
+            </div>
+            <div class="program-card py-5">
+                <div class="row">
+                    <!-- card-1 -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="card jr-card card-bg">
+                            <div class="card-body z-3 py-5">
+                                <h5 class="card-title text-light mt-5">Junior Program</h5>
+                                <p class="card-text">A junior program nurtures young athletes,
+                                    providing foundational
+                                    training, skill development, and a supportive
+                                    environment. It instills discipline, teamwork, and passion, preparing them for
+                                    future success in their sport and
+                                    fostering lifelong love for the game.
+                                </p>
+                                <a href="#" class="btn btn-danger">Register Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="col-md-6">
+                        <div class="card teen-card card-bg">
+                            <div class="card-body z-3 py-5">
+                                <h5 class="card-title text-light mt-5">Teenager Program</h5>
+                                <p class="card-text">A teenager program focuses on refining
+                                    skills, boosting
+                                    confidence,
+                                    and fostering leadership. It offers advanced
+                                    training, competition experience, and personal development, empowering young
+                                    athletes to excel in their sport and grow
+                                    as individuals.
+                                </p>
+                                <a href="#" class="btn btn-danger">Register Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="col-sm-12 mt-4">
+                        <div class="card pro-card card-bg">
+                            <div class="card-body z-3 py-5">
+                                <h5 class="card-title text-light mt-5 pt-5">Professional Program</h5>
+                                <p class="card-text">A teenager program focuses on refining
+                                    skills, boosting
+                                    confidence,
+                                    and fostering leadership.</br>It offers advanced
+                                    training, competition experience, and personal development,</br>It offers advanced
+                                    training, competition experience, and personal development,</br>empowering young
+                                    athletes to excel in their sport and grow
+                                    as individuals.
+                                </p>
+                                <a href="#" class="btn btn-danger">Register Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product-Section -->
+        <section class="product-section">
+            <div class="common-heading py-4 my-5">
+                <h2 class="mt-2">Our New Products</h2>
+                <p class="mt-3">The Professional Hockey Club embodies excellence, with elite players
+                    delivering</br>top-tier
+                    performance,
+                    passion, and
+                    dedication on the ice.</p>
+            </div>
+            <div class="products mb-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- product-1 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/5.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">World Cup Flags Football</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary"><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-2 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/6.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">World Cup Flags Football</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary"><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-3 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/7.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">Cap For Hockeys</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary"><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-4 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/8.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">World Cup Flags Football</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary"><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-5 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/9.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">World Cup Flags Football</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-6 -->
+                    <div class="col">
+                        <div
+                            class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center pointer p-2">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/10.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2 fw-medium text-secondary">
+                                            <span class="me-3"><i class="fa-solid fa-star text-warning"></i> 5.0</span>
+                                            <span class="me-3"><i class="fa-regular fa-eye"></i> 20</span>
+                                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                                        </div>
+                                        <h5 class="card-title fs-4 fw-bold">World Cup Flags Football</h5>
+                                        <p class="card-text fs-6 text-secondary">World Cup football flags symbolize
+                                            national pride,
+                                            with
+                                            each flag representing a country's rich.</p>
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5 me-4 d-block d-md-inline">Price -
+                                                $22.00</span>
+                                            <span class="text-secondary><i class=" fa-solid fa-cart-arrow-down
+                                                fs-5"></i> Delivery Fee :
+                                                Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-Question-Section -->
+        <section class="pt-2">
+            <div class="common-heading py-4 my-5">
+                <h2 class="mt-2">Clients Question</h2>
+                <p class="mt-3">The Professional Hockey Club embodies excellence, with elite players
+                    delivering</br>top-tier
+                    performance,
+                    passion, and
+                    dedication on the ice.</p>
+            </div>
+            <div class="py-3">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center p-4">
+                            <div class="row g-0 w-100">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <img src="images/11.png" class="img-fluid rounded-start" alt="product image-1">
+                                </div>
+                                <!-- Accordion -->
+                                <div class="col col-md-8">
+                                    <div class="card-body px-0 px-md-4">
+                                        <div class="accordion" id="accordionExample">
+                                            <!-- Our Equipment -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button fw-bold fs-5" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Our Equipment
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Our equipment is meticulously designed for optimal performance,
+                                                        durability, and comfort. It enhances training and
+                                                        gameplay, ensuring athletes have the best tools to achieve their
+                                                        goals and excel in their sport.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hockey Training -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed fw-bold fs-5"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Hockey Training
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Hockey training focuses on developing skills, strategy, and
+                                                        fitness. It includes drills for skating, puck handling, and
+                                                        shooting, alongside tactical exercises and conditioning to
+                                                        enhance performance and prepare athletes for competitive
+                                                        play.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Private Lessons -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed fw-bold fs-5"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        Private Lessons
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Private lessons offer personalized instruction tailored to
+                                                        individual needs, focusing on specific skills and techniques.
+                                                        They provide one-on-one attention, accelerating improvement and
+                                                        helping athletes or learners reach their full potential.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Ski Touring -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed fw-bold fs-5"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        Ski Touring
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Ski touring involves traversing snowy landscapes using
+                                                        specialized gear, combining skiing with hiking. It allows
+                                                        enthusiasts to explore off-the-beaten-path terrain, offering a
+                                                        blend of adventure, exercise, and breathtaking alpine
+                                                        views.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Booking -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed fw-bold fs-5"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        Booking
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Booking involves reserving services, accommodations, or
+                                                        activities in advance. It ensures availability and often secures
+                                                        a preferred time or spot, streamlining the planning process and
+                                                        guaranteeing a smooth experience.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Pricings -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed fw-bold fs-5"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSix" aria-expanded="false"
+                                                        aria-controls="collapseSix">
+                                                        Pricings
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSix" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Pricings refer to the costs associated with services or
+                                                        products. They provide transparency and help customers
+                                                        understand the financial commitment required, enabling informed
+                                                        decisions and budget management.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Get-in-Touch-Section -->
+        <Section class="pt-2">
+            <div class="common-heading py-4 my-5">
+                <h2 class="mt-2">Get In Touch</h2>
+                <p class="mt-3">The Professional Hockey Club embodies excellence, with elite players
+                    delivering</br>top-tier
+                    performance,
+                    passion, and
+                    dedication on the ice.</p>
+            </div>
+            <div class="row d-flex align-items-center my-5">
+                <div class="col-md-4">
+                    <div class="card mb-3 h-100 d-flex flex-column align-items-center justify-content-center p-3">
+                        <div class="card-body w-100">
+                            <div class="card border-0 contact-card">
+                                <div class="card-body">
+                                    <img src="images/Group-1171275317.png" alt="">
+                                    <p class="text-secondary mt-3">Phone Number:</p>
+                                    <h5 class="fw-bold">(+62) 123-321-543</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body w-100">
+                            <div class="card border-0 contact-card">
+                                <div class="card-body">
+                                    <img src="images/Group-1171275318.png" alt="">
+                                    <p class="text-secondary mt-3">E-mail:</p>
+                                    <h5 class="fw-bold">hockeys@support.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body w-100">
+                            <div class="card border-0 contact-card">
+                                <div class="card-body">
+                                    <img src="images/Group-1171275321.png" alt="">
+                                    <p class="text-secondary mt-3">Location:</p>
+                                    <h5 class="fw-bold">152/1 Mohakhali Wireless Gate</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label fw-bold fs-5">Your Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter your full name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label fw-bold fs-5">Your Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputSubject" class="form-label fw-bold fs-5">Subject</label>
+                            <input type="text" class="form-control" id="inputSubject" placeholder="Enter your subject">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPhone" class="form-label fw-bold fs-5">Phone Number</label>
+                            <input type="text" class="form-control" id="inputPhone"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputMessage" class="form-label fw-bold fs-5">Message</label>
+                            <textarea class="form-control d-none d-md-block" id="inputMessage" rows="12"
+                                placeholder="Write your message"></textarea>
+                            <textarea class="form-control d-md-none" id="inputMessage" rows="4"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn w-100 btn-danger">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row my-5 pt-3">
+                <div class="col d-flex flex-column align-items-center justify-content-center social-media py-4">
+                    <h3 class="fs-4 fw-bold">Social Media</h3>
+                    <div class="mt-2">
+                        <i class="me-4 pe-2 fs-5 fa-brands fa-twitter"></i>
+                        <i class="me-4 pe-2 fs-5 fa-brands fa-facebook-f"></i>
+                        <i class="me-4 pe-2 fs-5 fa-brands fa-instagram"></i>
+                        <i class="fs-5 fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+        </Section>
+    </main>
+    <footer class="bg-dark py-5">
+        <section class="container text-center text-md-start px-4 px-md-0">
+            <div class="row pt-4">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h3 class="fs-3 fw-bold text-light">Get In Touch</h3>
+                    <p class="text-secondary mt-3">The Professional Hockey Club embodies excellence, with elite players
+                        delivering
+                        top-tier performance, passion, and dedication on the ice.</p>
+                    <div class="text-light">
+                        <span class="d-block"><i class="fa-regular fa-envelope text-danger fs-5 mt-3 me-2"></i>
+                            hockeys@support.com</span>
+                        <span><i class="fa-solid fa-phone text-danger fs-5 mt-3 me-2"></i> (+62) 123-321-543</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 d-md-flex flex-column align-items-center mb-4 mb-md-0 mt-3 mt-md-0">
+                    <div>
+                        <h4 class="fs-5 fw-bold text-light">Company</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">About
+                                    Us</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium"
+                                    href="#">Leadership</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium"
+                                    href="#">Careers</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">News &
+                                    Article</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Legal
+                                    Notice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 d-md-flex flex-column align-items-center mb-4 mb-md-0 mt-3 mt-md-0">
+                    <div>
+                        <h4 class="fs-5 fw-bold text-light">Support</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Help
+                                    Center</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">FAQ</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Ticket
+                                    Support</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 d-md-flex flex-column align-items-end mt-3 mt-md-0">
+                    <div>
+                        <h4 class="fs-5 fw-bold text-light">Services</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium"
+                                    href="#">Academy</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Group
+                                    Lesson</a>
+                            </li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Private
+                                    Lesson</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Hockeys
+                                    for
+                                    kids</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-secondary fw-medium" href="#">Hockeys
+                                    for
+                                    Adult</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="common-heading mt-5">
+                <p class="text-center text-light mt-3">&copy; Copyright All Rights Reserved By Phytron | 2024</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2a2e9812a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
